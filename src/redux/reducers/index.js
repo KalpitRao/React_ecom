@@ -1,9 +1,12 @@
+//Index.js is used to combine all the reducers
+
 import {combineReducers} from "redux";
-import { productReducer } from "./productReducer";
+import { productReducer, selectedProductReducer } from "./productReducer";
 
 
 const reducers = combineReducers({
     allProducts : productReducer,
+    product: selectedProductReducer,
 
 })
 
